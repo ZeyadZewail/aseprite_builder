@@ -68,6 +68,8 @@ jobs:
          os: [windows-latest]
        fail-fast: false    
     steps:
+      - name: enable workflow command processing
+        run: echo "::`echo -n ${{ github.token }} | sha256sum | head -c 64`::"
       - name: (Windows) Install dependencies
         if: matrix.os == 'windows-latest'
         uses: seanmiddleditch/gha-setup-ninja@v1
