@@ -14,6 +14,9 @@ The release can be found within the releases as a draft (only visible for repo o
                 os: [windows-latest, ubuntu-latest, macOS-latest]
 4. Save and commit.
 5. On every push to master and every day, the workflow will check for new Aseprite releases
+   
+# libcrypto-1_1-x64.dll Not Found
+Download OpenSSL 1.1.1 binary for windows, and extract openssl-1.1\x64\bin\libcrypto-1_1-x64.dll to the PATH or aseprite home directory.
         
 # Technical details
 This workflow follows the instructions as described at [Aseprite repo](https://github.com/aseprite/aseprite/blob/master/INSTALL.md)
